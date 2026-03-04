@@ -1,0 +1,6 @@
+interface:
+  display_name: "New Relic Entity Scout"
+  short_description: "Discover and validate entities, then bootstrap baseline metrics."
+  default_prompt: "Use $newrelic-entity-scout to find the correct entity scope, validate GUID identity, and fetch baseline golden metrics before deeper diagnosis."
+policy:
+  allow_implicit_invocation: true

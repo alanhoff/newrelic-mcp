@@ -1,0 +1,6 @@
+interface:
+  display_name: "New Relic Incident Correlation"
+  short_description: "Correlate alerts, logs, relationships, and service levels."
+  default_prompt: "Use $newrelic-incident-correlation to correlate incident signals for one entity in a strict order and produce evidence with verified vs inference labels."
+policy:
+  allow_implicit_invocation: true

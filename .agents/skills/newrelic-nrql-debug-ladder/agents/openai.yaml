@@ -1,0 +1,6 @@
+interface:
+  display_name: "New Relic NRQL Debug Ladder"
+  short_description: "Debug NRQL and NerdGraph queries with a proven ladder."
+  default_prompt: "Use $newrelic-nrql-debug-ladder to debug this New Relic query with preflight checks, count sanity, keyset schema discovery, and a safe rewrite."
+policy:
+  allow_implicit_invocation: true
