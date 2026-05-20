@@ -14,20 +14,31 @@ Required environment variables:
 - `API_KEY` (New Relic user API key)
 - `NERDGRAPH_URL` (usually `https://api.newrelic.com/graphql`)
 
+> **EU region:** If your New Relic dashboard is at `one.eu.newrelic.com`, use `https://api.eu.newrelic.com/graphql` as your `NERDGRAPH_URL` instead.
+
 ## Quick Start
 
 Run the MCP server directly:
 
 ```bash
+# US region (default)
 ACCOUNT_ID=123456 \
 API_KEY=your_new_relic_user_key \
 NERDGRAPH_URL=https://api.newrelic.com/graphql \
+npx -y git@github.com:alanhoff/newrelic-mcp.git
+
+# EU region
+ACCOUNT_ID=123456 \
+API_KEY=your_new_relic_user_key \
+NERDGRAPH_URL=https://api.eu.newrelic.com/graphql \
 npx -y git@github.com:alanhoff/newrelic-mcp.git
 ```
 
 This server speaks MCP over stdio, so it is normally started by an MCP client/agent.
 
 ## Install In Common CLI Agents
+
+> **EU region:** Replace `https://api.newrelic.com/graphql` with `https://api.eu.newrelic.com/graphql` in all configs below if your account is on the EU region.
 
 ### Codex CLI
 
